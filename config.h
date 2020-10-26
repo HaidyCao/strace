@@ -691,7 +691,9 @@
 #define HAVE_FORK 1
 
 /* Define to 1 if you have the `fputs_unlocked' function. */
+#ifndef ANDROID
 #define HAVE_FPUTS_UNLOCKED 1
+#endif
 
 /* Define to 1 if you have the `fstatat' function. */
 #define HAVE_FSTATAT 1
@@ -945,7 +947,9 @@
 #define HAVE_PREADV 1
 
 /* Define to 1 if you have the `process_vm_readv' function. */
+#ifndef ANDROID
 #define HAVE_PROCESS_VM_READV 1
+#endif
 
 /* Define to 1 if the system provides program_invocation_name variable */
 /* #undef HAVE_PROGRAM_INVOCATION_NAME */
@@ -987,7 +991,9 @@
 #define HAVE_STDLIB_H 1
 
 /* Define to 1 if you have the `stpcpy' function. */
+#ifndef ANDROID
 #define HAVE_STPCPY 1
+#endif
 
 /* Define to 1 if you have the `strerror' function. */
 #define HAVE_STRERROR 1

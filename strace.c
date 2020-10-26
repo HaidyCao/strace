@@ -2725,7 +2725,11 @@ terminate(void)
 }
 
 int
+#ifdef STRACE_LIB
+strace_main(int argc, char *argv[])
+#elif defined(STRACE_EXE)
 main(int argc, char *argv[])
+#endif
 {
 	setlocale(LC_ALL, "");
 	init(argc, argv);
